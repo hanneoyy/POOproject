@@ -147,6 +147,20 @@ public class Manager {
 		bddDistante.showDb();
 	}
 	
+	// ========================= GESTION GUI ================================
+	
+	public static String currentPseudo() {
+		return localUser.pseudo;
+	}
+	
+	public static void updtPseudo(String newPseudo) {
+		localUser.pseudo = newPseudo;
+	}
+	
+	public static InetAddress currentIP() {
+		return localUser.add;
+	}
+	
 	// ========================= LANCEMENT APPLICATION =======================
 	
 	public static void main(String[] args) {
